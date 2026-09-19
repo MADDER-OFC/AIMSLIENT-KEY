@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MADDER FREE KEY</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    width:100%;
+    min-height:100%;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px 0;
+    font-family:Arial,Helvetica,sans-serif;
+    color:white;
+    background:#18001f;
+}
+
+/* BACKGROUND PNG */
+body::before{
+    content:"";
+    position:fixed;
+    z-index:-3;
+    inset:-30px;
+
+    background-image:
+        linear-gradient(
+            rgba(35,0,45,.42),
+            rgba(35,0,45,.42)
+        ),
+        url("logo.png");
+
+    background-size:cover;
+    background-position:center;
+
+    filter:blur(7px);
+    transform:scale(1.08);
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    z-index:-2;
+    inset:0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255,0,230,.18),
+            transparent 42%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(50,0,65,.30),
+            rgba(20,0,30,.62)
+        );
+}
+
+/* CARD */
+.card{
+    width:92%;
+    max-width:430px;
+    padding:30px 20px;
+
+    border-radius:28px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(28,5,36,.93),
+            rgba(15,2,24,.94)
+        );
+
+    border:1px solid rgba(255,50,225,.45);
+
+    box-shadow:
+        0 0 20px rgba(255,0,220,.22),
+        0 0 60px rgba(255,0,220,.13),
+        inset 0 0 30px rgba(255,0,220,.06);
+
+    text-align:center;
+
+    backdrop-filter:blur(12px);
+}
+
+.logo{
+    width:125px;
+    height:125px;
+    object-fit:cover;
+    border-radius:50%;
+    display:block;
+    margin:0 auto 20px;
+
+    border:3px solid #ff43e7;
+
+    box-shadow:
+        0 0 7px white,
+        0 0 20px #ff00e6,
+        0 0 40px #ff00e655;
+}
+
+h1{
+    font-size:30px;
+    letter-spacing:3px;
+    margin-bottom:8px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #ff62ed,
+            #b77cff,
+            #ffffff
+        );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+.sub{
+    font-size:11px;
+    letter-spacing:3px;
+    color:#dcb9e3;
+    margin-bottom:25px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    border:0;
+    border-radius:15px;
+
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7000ff,
+            #ff00b8
+        );
+
+    box-shadow:
+        0 0 20px rgba(255,0,210,.35);
+}
+
+button:active{
+    transform:scale(.98);
+}
+
+/* STEPS */
+.step{
+    margin:15px 0;
+    padding:18px;
+    border-radius:18px;
+
+    background:rgba(255,255,255,.035);
+    border:1px solid rgba(255,60,230,.16);
+}
+
+.step h2{
+    font-size:14px;
+    margin-bottom:13px;
+}
+
+.go{
+    width:105px;
+    padding:10px;
+    font-size:13px;
+}
+
+.status{
+    margin-top:11px;
+    font-size:12px;
+    line-height:20px;
+}
+
+.done{
+    color:#00ffad;
+    font-weight:bold;
+}
+
+.wait{
+    color:#ffd34d;
+}
+
+#steps,
+#verify,
+#bypass,
+#claim{
+    display:none;
+}
+
+/* CONSOLE */
+.console{
+    text-align:left;
+    min-height:150px;
+    padding:17px;
+    border-radius:15px;
+
+    background:#030003;
+    border:1px solid #ff35dc55;
+
+    color:#ff62e9;
+
+    font-family:monospace;
+    font-size:12px;
+    line-height:22px;
+
+    box-shadow:
+        inset 0 0 25px #ff00c30c;
+}
+
+/* BYPASS */
+.bypassPage{
+    position:relative;
+    overflow:hidden;
+}
+
+.warningWatermark{
+    position:absolute;
+    inset:-100px;
+
+    display:flex;
+    flex-wrap:wrap;
+    align-content:center;
+    justify-content:center;
+
+    gap:25px;
+
+    transform:rotate(-18deg);
+
+    color:#ff0000;
+    font-size:19px;
+    font-weight:bold;
+
+    opacity:.055;
+    pointer-events:none;
+}
+
+.bypassImg{
+    width:140px;
+    height:140px;
+
+    object-fit:contain;
+
+    margin-bottom:10px;
+
+    filter:
+        drop-shadow(0 0 8px red)
+        drop-shadow(0 0 25px red);
+}
+
+.bypassTitle{
+    color:#ff3030;
+    font-size:27px;
+    font-weight:1000;
+
+    text-shadow:
+        0 0 8px red,
+        0 0 20px red;
+}
+
+.warning{
+    color:#ff4444;
+    font-weight:bold;
+    margin:13px 0 18px;
+}
+
+.reason{
+    padding:17px;
+    margin-bottom:16px;
+
+    border-radius:15px;
+
+    background:rgba(255,0,0,.035);
+    border:1px solid rgba(255,50,50,.32);
+}
+
+.reason b{
+    color:#ff4040;
+    display:block;
+    margin-bottom:8px;
+}
+
+.reason span{
+    color:#ff9999;
+    font-size:12px;
+    line-height:20px;
+}
+
+.retry{
+    background:
+        linear-gradient(
+            90deg,
+            #ff173c,
+            #ff6570,
+            #ff173c
+        );
+}
+
+/* CLAIM */
+.sorry{
+    font-size:23px;
+    color:#ff62ea;
+    font-weight:900;
+    letter-spacing:4px;
+    margin-bottom:8px;
+}
+
+.keytitle{
+    font-size:25px;
+    font-weight:900;
+}
+
+.keybox{
+    margin:20px 0;
+    padding:18px;
+
+    border-radius:16px;
+
+    background:rgba(10,0,15,.65);
+
+    border:1px solid #ff45e5;
+
+    color:#ff66ed;
+
+    font-size:23px;
+    font-weight:bold;
+    letter-spacing:1px;
+
+    box-shadow:
+        0 0 20px rgba(255,0,220,.14);
+}
+
+.copy{
+    background:
+        linear-gradient(
+            90deg,
+            #7000ff,
+            #ff00b8
+        );
+}
+
+.note{
+    margin-top:18px;
+    color:#bfaac4;
+    font-size:11px;
+}
+
+@media(max-width:360px){
+
+    .card{
+        padding:24px 16px;
+    }
+
+    .logo{
+        width:110px;
+        height:110px;
+    }
+
+    h1{
+        font-size:25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<!-- HOME -->
+<section id="home">
+
+<img src="logo.png" class="logo">
+
+<h1>
+MADDER FREE KEY
+</h1>
+
+<div class="sub">
+✦ PREMIUM KEY GENERATOR ✦
+</div>
+
+<button onclick="startWebsite()">
+🔑 GET KEY
+</button>
+
+</section>
+
+
+<!-- STEPS -->
+<section id="steps">
+
+<img src="logo.png" class="logo">
+
+<h1>
+GET KEY
+</h1>
+
+<div class="sub">
+COMPLETE BOTH STEPS
+</div>
+
+
+<div class="step">
+
+<h2>
+STEP 1 — SUBSCRIBE CHANNEL
+</h2>
+
+<button class="go" onclick="goYoutube()">
+GO ▶
+</button>
+
+<div id="step1Status" class="status">
+⏳ Waiting...
+</div>
+
+</div>
+
+
+<div
+class="step"
+id="step2Box"
+style="display:none;">
+
+<h2>
+STEP 2 — COMPLETE SHORTEN
+</h2>
+
+<button
+class="go"
+onclick="startVerification()">
+
+GO 🔗
+
+</button>
+
+<div id="step2Status" class="status">
+⏳ Waiting...
+</div>
+
+</div>
+
+
+<button
+id="claimButton"
+style="display:none;margin-top:10px;"
+onclick="claimKey()">
+
+👑 CLAIM YOUR KEY
+
+</button>
+
+</section>
+
+
+<!-- VERIFY -->
+<section id="verify">
+
+<img src="logo.png" class="logo">
+
+<h1>
+VERIFYING
+</h1>
+
+<div class="sub">
+SECURE CONSOLE
+</div>
+
+<div class="console" id="console">
+
+[ SYSTEM ] Starting verification...
+
+</div>
+
+</section>
+
+
+<!-- BYPASS -->
+<section
+id="bypass"
+class="bypassPage">
+
+<div class="warningWatermark">
+
+⚠️ BYPASS DETECTED 🗿
+⚠️ BYPASS DETECTED 🗿
+⚠️ BYPASS DETECTED 🗿
+⚠️ BYPASS DETECTED 🗿
+⚠️ BYPASS DETECTED 🗿
+⚠️ BYPASS DETECTED 🗿
+⚠️ BYPASS DETECTED 🗿
+⚠️ BYPASS DETECTED 🗿
+
+</div>
+
+<img
+src="bypass.png"
+class="bypassImg"
+alt="BYPASS">
+
+<div class="bypassTitle">
+BYPASS DETECTED 🗿
+</div>
+
+<div class="warning">
+⚠️ ⚠️ ⚠️ WARNING ⚠️ ⚠️ ⚠️
+</div>
+
+<div class="reason">
+
+<b>
+REASON:
+</b>
+
+<span>
+YOUR ARE VERY FAST OR USING BYPASS DETECTED 🗿
+</span>
+
+</div>
+
+<button
+class="retry"
+onclick="retry()">
+
+🔄 RETRY
+
+</button>
+
+</section>
+
+
+<!-- CLAIM -->
+<section id="claim">
+
+<img src="logo.png" class="logo">
+
+<div class="sorry">
+SORRY
+</div>
+
+<div class="keytitle">
+KEY GENERATED
+</div>
+
+<div class="sub">
+MADDER VIP PREMIUM
+</div>
+
+<div
+class="keybox"
+id="keyBox">
+
+VIP-AIMSILENT
+
+</div>
+
+<button
+class="copy"
+onclick="copyKey()">
+
+📋 COPY KEY
+
+</button>
+
+<div class="note">
+🔐 Key generated for this browser session
+</div>
+
+</section>
+
+</div>
+
+
+<!-- AUDIO -->
+
+<audio
+id="mainMusic"
+loop
+preload="auto">
+
+<source
+src="main.mp3"
+type="audio/mpeg">
+
+</audio>
+
+
+<audio
+id="bypassMusic"
+loop
+preload="auto">
+
+<source
+src="bypass.mp3"
+type="audio/mpeg">
+
+</audio>
+
+
+<script>
+
+const STORAGE_KEY =
+"MADDER_FREE_KEY_STATE";
+
+let verifyTimer = null;
+
+
+/* =====================================
+   STORAGE
+===================================== */
+
+function saveState(state){
+
+    localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify(state)
+    );
+
+}
+
+
+function getState(){
+
+    try{
+
+        return JSON.parse(
+            localStorage.getItem(STORAGE_KEY)
+        );
+
+    }catch(e){
+
+        return null;
+
+    }
+
+}
+
+
+/* =====================================
+   PAGE SWITCH
+===================================== */
+
+function showPage(page){
+
+    document.getElementById("home")
+        .style.display="none";
+
+    document.getElementById("steps")
+        .style.display="none";
+
+    document.getElementById("verify")
+        .style.display="none";
+
+    document.getElementById("bypass")
+        .style.display="none";
+
+    document.getElementById("claim")
+        .style.display="none";
+
+
+    document.getElementById(page)
+        .style.display="block";
+
+}
+
+
+/* =====================================
+   MUSIC
+===================================== */
+
+function startMainMusic(){
+
+    const main =
+        document.getElementById("mainMusic");
+
+    const bypass =
+        document.getElementById("bypassMusic");
+
+
+    /*
+       Main music only.
+       Bypass music is stopped here.
+    */
+
+    bypass.pause();
+    bypass.currentTime=0;
+
+
+    main.volume=1;
+
+    main.play().catch(function(error){
+
+        console.log(
+            "Main music blocked:",
+            error
+        );
+
+    });
+
+}
+
+
+function startBypassMusic(){
+
+    const main =
+        document.getElementById("mainMusic");
+
+    const bypass =
+        document.getElementById("bypassMusic");
+
+
+    /*
+       This function is called ONLY
+       when bypass is detected.
+    */
+
+    main.pause();
+    main.currentTime=0;
+
+
+    bypass.volume=1;
+    bypass.currentTime=0;
+
+    bypass.play().catch(function(error){
+
+        console.log(
+            "Bypass music blocked:",
+            error
+        );
+
+    });
+
+}
+
+
+/* =====================================
+   HOME
+===================================== */
+
+function startWebsite(){
+
+    /*
+       GET KEY is a real user click,
+       so browser has a better chance
+       of allowing the music.
+    */
+
+    startMainMusic();
+
+
+    let state=getState();
+
+
+    if(!state){
+
+        state={
+
+            page:"steps",
+
+            step1:false,
+
+            step2:false
+
+        };
+
+    }else{
+
+        state.page="steps";
+
+    }
+
+
+    saveState(state);
+
+
+    showPage("steps");
+
+    renderSteps();
+
+}
+
+
+/* =====================================
+   RENDER
+===================================== */
+
+function renderSteps(){
+
+    let state=getState();
+
+    if(!state)return;
+
+
+    const step1Status =
+        document.getElementById(
+            "step1Status"
+        );
+
+
+    const step2Box =
+        document.getElementById(
+            "step2Box"
+        );
+
+
+    const step2Status =
+        document.getElementById(
+            "step2Status"
+        );
+
+
+    const claimButton =
+        document.getElementById(
+            "claimButton"
+        );
+
+
+    if(state.step1){
+
+        step1Status.className=
+            "status done";
+
+        step1Status.innerText=
+            "✅ STEP 1 COMPLETED";
+
+        step2Box.style.display=
+            "block";
+
+    }else{
+
+        step1Status.className=
+            "status";
+
+        step1Status.innerText=
+            "⏳ Waiting...";
+
+        step2Box.style.display=
+            "none";
+
+    }
+
+
+    if(state.step2){
+
+        step2Status.className=
+            "status done";
+
+        step2Status.innerText=
+            "✅ STEP 2 COMPLETED";
+
+        claimButton.style.display=
+            "block";
+
+    }else{
+
+        claimButton.style.display=
+            "none";
+
+    }
+
+}
+
+
+/* =====================================
+   STEP 1
+===================================== */
+
+function goYoutube(){
+
+    startMainMusic();
+
+
+    let state=getState();
+
+    if(!state)return;
+
+    if(state.step1)return;
+
+
+    state.page="steps";
+
+    state.step1Started=
+        Date.now();
+
+
+    saveState(state);
+
+
+    window.open(
+        "https://youtube.com/@madder-ofc?si=qrhv1aQQmCYE0cCe",
+        "_blank"
+    );
+
+
+    document.getElementById(
+        "step1Status"
+    ).className="status wait";
+
+
+    document.getElementById(
+        "step1Status"
+    ).innerText=
+        "⏳ Checking...";
+
+
+    setTimeout(
+        checkYoutube,
+        3200
+    );
+
+}
+
+
+/* =====================================
+   CHECK STEP 1
+===================================== */
+
+function checkYoutube(){
+
+    let state=getState();
+
+    if(
+        !state ||
+        state.step1
+    )return;
+
+
+    const elapsed =
+        (Date.now() -
+        state.step1Started) / 1000;
+
+
+    if(elapsed<3){
+
+        document.getElementById(
+            "step1Status"
+        ).innerHTML=
+
+        `<span
+        style="
+        color:#ff526c;
+        font-weight:bold;
+        ">
+        ⚠️ TOO FAST
+        </span>
+
+        <br><br>
+
+        <button
+        class="retry"
+        onclick="retryStep1()">
+
+        🔄 RETRY
+
+        </button>`;
+
+        return;
+
+    }
+
+
+    state.step1=true;
+
+    state.step1Started=null;
+
+    state.page="steps";
+
+
+    saveState(state);
+
+    renderSteps();
+
+}
+
+
+/* =====================================
+   STEP 1 RETRY
+===================================== */
+
+function retryStep1(){
+
+    document.getElementById(
+        "step1Status"
+    ).className="status";
+
+    document.getElementById(
+        "step1Status"
+    ).innerText=
+        "⏳ Waiting...";
+
+}
+
+
+/* =====================================
+   VERIFY PAGE
+===================================== */
+
+function startVerification(){
+
+    let state=getState();
+
+
+    if(
+        !state ||
+        !state.step1
+    )return;
+
+
+    startMainMusic();
+
+
+    state.page="verify";
+
+    state.verifyStarted=
+        Date.now();
+
+
+    saveState(state);
+
+
+    showPage("verify");
+
+
+    const consoleBox =
+        document.getElementById(
+            "console"
+        );
+
+
+    const messages=[
+
+        "[ SYSTEM ] Initializing...",
+
+        "[ OK ] Session loaded",
+
+        "[ OK ] Checking request",
+
+        "[ OK ] Preparing secure link",
+
+        "[ OK ] Verification complete"
+
+    ];
+
+
+    let index=0;
+
+
+    consoleBox.innerHTML=
+        messages[0];
+
+    index=1;
+
+
+    clearInterval(
+        verifyTimer
+    );
+
+
+    verifyTimer=setInterval(
+
+        function(){
+
+            if(index<messages.length){
+
+                consoleBox.innerHTML +=
+                    "<br>" +
+                    messages[index];
+
+                index++;
+
+            }else{
+
+                clearInterval(
+                    verifyTimer
+                );
+
+                openShortener();
+
+            }
+
+        },
+
+        750
+
+    );
+
+}
+
+
+/* =====================================
+   OPEN SHORTENER
+===================================== */
+
+function openShortener(){
+
+    let state=getState();
+
+    if(!state)return;
+
+
+    /*
+       IMPORTANT:
+
+       Page becomes "shorten"
+       and timestamp starts NOW.
+
+       We DO NOT call checkShortener()
+       here.
+
+       So bypass music cannot start
+       immediately after opening the link.
+    */
+
+    state.page="shorten";
+
+    state.shortenStarted=
+        Date.now();
+
+
+    saveState(state);
+
+
+    /*
+       Main music stays as it is.
+       No bypass music here.
+    */
+
+    window.open(
+        "https://vplink.in/kPSMg",
+        "_blank"
+    );
+
+}
+
+
+/* =====================================
+   CHECK SHORTENER
+===================================== */
+
+function checkShortener(){
+
+    let state=getState();
+
+
+    if(
+        !state ||
+        state.page!=="shorten"
+    )return;
+
+
+    const elapsed =
+        (Date.now() -
+        state.shortenStarted) / 1000;
+
+
+    /*
+       IMPORTANT:
+
+       Do not detect bypass merely
+       because the external link opened.
+
+       Only check when the original
+       page becomes visible again.
+    */
+
+    if(elapsed<25){
+
+        showBypass();
+
+        return;
+
+    }
+
+
+    /*
+       25 seconds completed.
+    */
+
+    state.step2=true;
+
+    state.page="steps";
+
+    state.shortenStarted=null;
+
+
+    saveState(state);
+
+
+    showPage("steps");
+
+    renderSteps();
+
+    startMainMusic();
+
+}
+
+
+/* =====================================
+   BYPASS
+===================================== */
+
+function showBypass(){
+
+    let state=getState() || {};
+
+
+    state.page="bypass";
+
+
+    saveState(state);
+
+
+    showPage("bypass");
+
+
+    /*
+       Bypass music starts HERE ONLY.
+    */
+
+    startBypassMusic();
+
+}
+
+
+/* =====================================
+   RETRY
+===================================== */
+
+function retry(){
+
+    localStorage.removeItem(
+        STORAGE_KEY
+    );
+
+
+    clearInterval(
+        verifyTimer
+    );
+
+
+    document.getElementById(
+        "mainMusic"
+    ).pause();
+
+    document.getElementById(
+        "bypassMusic"
+    ).pause();
+
+
+    showPage("home");
+
+}
+
+
+/* =====================================
+   CLAIM KEY
+===================================== */
+
+function claimKey(){
+
+    let state=getState();
+
+
+    if(!state)return;
+
+
+    if(
+        !state.step1 ||
+        !state.step2
+    )return;
+
+
+    state.page="claim";
+
+
+    saveState(state);
+
+
+    showPage("claim");
+
+    startMainMusic();
+
+}
+
+
+/* =====================================
+   COPY KEY
+===================================== */
+
+async function copyKey(){
+
+    const key=
+        "VIP-AIMSILENT";
+
+
+    try{
+
+        await navigator.clipboard
+            .writeText(key);
+
+
+        const box =
+            document.getElementById(
+                "keyBox"
+            );
+
+
+        box.innerText=
+            "✅ KEY COPIED!";
+
+
+        setTimeout(
+
+            function(){
+
+                box.innerText=
+                    key;
+
+            },
+
+            1200
+
+        );
+
+    }catch(error){
+
+        const temp =
+            document.createElement(
+                "textarea"
+            );
+
+
+        temp.value=key;
+
+        document.body.appendChild(
+            temp
+        );
+
+        temp.select();
+
+        document.execCommand(
+            "copy"
+        );
+
+        temp.remove();
+
+
+        document.getElementById(
+            "keyBox"
+        ).innerText=
+            "✅ KEY COPIED!";
+
+
+        setTimeout(
+
+            function(){
+
+                document.getElementById(
+                    "keyBox"
+                ).innerText=
+                    key;
+
+            },
+
+            1200
+
+        );
+
+    }
+
+}
+
+
+/* =====================================
+   RESTORE
+===================================== */
+
+function restoreState(){
+
+    const state=getState();
+
+
+    if(!state){
+
+        showPage("home");
+
+        return;
+
+    }
+
+
+    if(
+        state.page==="bypass"
+    ){
+
+        showPage("bypass");
+
+        startBypassMusic();
+
+        return;
+
+    }
+
+
+    if(
+        state.page==="claim"
+    ){
+
+        showPage("claim");
+
+        return;
+
+    }
+
+
+    if(
+        state.page==="shorten"
+    ){
+
+        /*
+           Do NOT check here automatically.
+
+           The page may have just loaded
+           while the external shortener is
+           still open in another tab.
+        */
+
+        showPage("steps");
+
+        renderSteps();
+
+        return;
+
+    }
+
+
+    if(
+        state.page==="steps"
+    ){
+
+        showPage("steps");
+
+        renderSteps();
+
+        return;
+
+    }
+
+
+    showPage("home");
+
+}
+
+
+/* =====================================
+   RETURN FROM EXTERNAL TAB
+===================================== */
+
+document.addEventListener(
+    "visibilitychange",
+    function(){
+
+        if(
+            document.visibilityState !==
+            "visible"
+        ){
+
+            return;
+
+        }
+
+
+        const state=getState();
+
+        if(!state)return;
+
+
+        /*
+           ONLY NOW check shortener.
+
+           This means going TO the link
+           does not trigger bypass.
+        */
+
+        if(
+            state.page==="shorten"
+        ){
+
+            checkShortener();
+
+        }
+
+
+        else if(
+            state.page==="steps"
+        ){
+
+            renderSteps();
+
+            startMainMusic();
+
+        }
+
+
+        else if(
+            state.page==="bypass"
+        ){
+
+            showPage("bypass");
+
+            startBypassMusic();
+
+        }
+
+
+        else if(
+            state.page==="claim"
+        ){
+
+            showPage("claim");
+
+            startMainMusic();
+
+        }
+
+    }
+);
+
+
+/* =====================================
+   INITIAL LOAD
+===================================== */
+
+restoreState();
+
+</script>
+
+</body>
+</html>
